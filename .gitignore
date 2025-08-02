@@ -1,0 +1,10 @@
+# Sensitive files
+.env
+credentials.json
+token.json
+queries.db
+
+# Python cache
+__pycache__/
+*.pyc
+venv/

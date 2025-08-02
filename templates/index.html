@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DriveAI Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>📂 DriveAI Assistant</h1>
+    <p>Enter your command below:</p>
+    <form method="POST">
+      <input type="text" name="command" placeholder="e.g. LIST /ProjectX or SUMMARY /notes.txt" required>
+      <button type="submit">Submit</button>
+    </form>
+    <p class="info">Supported commands:<br>
+      ➤ <code>LIST /FolderName</code><br>
+      ➤ <code>SUMMARY /filename.txt</code>
+    </p>
+  </div>
+</body>
+</html>
